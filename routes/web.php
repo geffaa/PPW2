@@ -16,3 +16,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/about', function () {
+    return view('about', [
+        "name" => "lala",
+        "email" => "lala@gmail.com",
+        "address" => "Sendowo, Yogyakarta",
+        "number" => "123-456-789"
+    ]);
+});
+
+Route::get('/profile', function () {
+    return view('profile', [
+        'nama' => 'Yodhim',
+        'email' => 'Yodhim@example.com',
+        'hobi' => 'Makan es krim',
+        'umur' => 30,
+    ]);
+});
