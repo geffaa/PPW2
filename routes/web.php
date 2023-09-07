@@ -36,3 +36,15 @@ Route::get('/profile', function () {
 });
 
 Route::get('/boom', [MencobaController::class,'boomesport']);
+
+Route::get('/boom',[PostController::class,'boomesport']);
+
+// Versi 7
+Route::get('trying', 'MencobaController@boomesport');
+
+// Versi 9
+Route::get('/boom', [MencobaController::class,'boomesport']);
+Route::get('/prx', [MencobaController::class,'prxesport']);
+Route::get('/fnatic', [MencobaController::class,'fnaticesport']);
+Route::get('/fpx', [MencobaController::class,'fpxesport']);
+Route::get('/', [MencobaController::class,'beranda']);
