@@ -34,3 +34,5 @@ Route::get('/profile', function () {
         'umur' => 30,
     ]);
 });
+
+Route::get('/boom', [MencobaController::class,'boomesport']);
